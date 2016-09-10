@@ -1,10 +1,10 @@
-# Nestle or Not
+# CUB or Not
 
 Quiz Game written in Elm
 
 ## Play Online
 
-http://nestle-or-not.s3-website-us-east-1.amazonaws.com/
+Not available yet. Will be at http://cub-or-not.s3-website-us-east-1.amazonaws.com/
 
 ## Run Locally
 
@@ -13,11 +13,11 @@ http://nestle-or-not.s3-website-us-east-1.amazonaws.com/
 If you do not have this repo on your computer yet, run these commands.
 
 ```bash
-git clone https://github.com/camjc/nestle-or-not
-cd nestle-or-not
+git clone https://github.com/camjc/cub-or-not
+cd cub-or-not
 ```
 
-Once you are in the `nestle-or-not/` directory, run this command:
+Once you are in the `cub-or-not/` directory, run this command:
 
 ```bash
 elm-reactor
@@ -29,8 +29,8 @@ to see it in action.
 
 ## Note
 
-This has no affiliation with Nestle or
+This has no affiliation with CUB or
 any of the other companies and products shown.
 
 I haven’t vetted the practices of all other examples yet,
-but just list the main competitor to each Nestle product.
+but just list the main competitor to each CUB product.
