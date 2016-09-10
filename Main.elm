@@ -9,61 +9,38 @@ import Random
 import Random.Array
 
 
--- True is Nestle, False is Other.
+-- True is CUB, False is Other.
 -- I haven’t vetted the practices of all other examples yet,
--- but just list the main competitor to each Nestle product.
+-- but just list the main competitor to each CUB product,
+-- or another (preferably Australian) beer if no direct competitor.
 
 
 questions : List Quiz.Question
 questions =
-    [ ( True, "Aero" )
-    , ( False, "Mars Bar" )
-    , ( True, "Allens" )
-    , ( False, "Cadbury" )
-    , ( True, "Uncle Tobys" )
-    , ( False, "Weet-Bix" )
-    , ( True, "Cheerios" )
-    , ( False, "Kellogg's Corn Flakes" )
-    , ( True, "Quick-eze" )
-    , ( False, "Rennie" )
-    , ( True, "Butter Menthols" )
-    , ( False, "Fisherman's Friend" )
-    , ( True, "Crunch" )
-    , ( False, "Krackel" )
-    , ( True, "Fancy Feast" )
-    , ( True, "Friskies" )
-    , ( False, "Whiskas" )
-    , ( False, "Purina" )
-    , ( True, "Gerber (Baby Formula)" )
-    , ( False, "Enfamil (Baby Formula)" )
-    , ( True, "Häagen-Dazs" )
-    , ( False, "Ben and Jerry" )
-    , ( True, "Kit Kat" )
-    , ( False, "Snickers" )
-    , ( True, "Lean Cuisine" )
-    , ( False, "Weight Watchers" )
-    , ( True, "Maggi" )
-    , ( False, "Top Ramen" )
-    , ( True, "Milo" )
-    , ( False, "Moove" )
-    , ( True, "Mövenpick" )
-    , ( False, "Baskin Robbins" )
-    , ( True, "Nescafé" )
-    , ( False, "Starbucks" )
-    , ( True, "Nespresso" )
-    , ( False, "Illy" )
-    , ( True, "Nesquick" )
-    , ( False, "Ovaltine" )
-    , ( True, "Perrier" )
-    , ( False, "Evian" )
-    , ( True, "San Pellegrino" )
-    , ( False, "Cool Ridge" )
-    , ( True, "Smarties" )
-    , ( False, "M&Ms" )
-    , ( True, "Nerds" )
-    , ( False, "Skittles" )
-    , ( True, "Wonka" )
-    , ( False, "Hersheys" )
+    [ ( True, "Carlton Cold" )
+    , ( False, "Coopers Pale Ale" )
+    , ( True, "Carlton Draught" )
+    , ( False, "Little Creatures Pale Ale" )
+    , ( True, "Carlton Dry" )
+    , ( False, "Tooheys Extra Dry" )
+    , ( True, "Crown Lager" )
+    , ( False, "Cascade Premium" )
+    , ( True, "Foster's Lager" )
+    , ( False, "James Boag's Premium" )
+    , ( True, "Melbourne Bitter" )
+    , ( False, "Brunswick Bitter" )
+    , ( True, "Pure Blonde" )
+    , ( False, "Hahn SuperDry" )
+    , ( True, "Victoria Bitter (VB)" )
+    , ( False, "Tooheys New" )
+    , ( True, "Bulmers" )
+    , ( False, "Magners" )
+    , ( True, "Dirty Granny" )
+    , ( False, "5 Seeds Crisp Apple" )
+    , ( True, "Mercury Draught Cider" )
+    , ( False, "Monteith’s Crushed Apple Cider" )
+    , ( True, "Strongbow" )
+    , ( False, "The Hills Cider" )
     ]
 
 
@@ -76,19 +53,21 @@ instructionsComponent : Html a
 instructionsComponent =
     Markdown.toHtml [] """
 
-# Nestle or Not
+# CUB or Not
 
-## Reasons I wanted to learn what products Nestle makes
+## Why I wanted to learn what products Carlton & United Breweries makes
 
-  - [Alleged child slavery](https://www.rt.com/usa/328682-child-slavery-scotus-nestle/)
-  - [Alleged water crisis profiteering](https://www.salon.com/2015/04/07/nestles_despicable_water_crisis_profiteering_how_its_making_a_killing_%E2%80%94%C2%A0while_california_is_dying_of_thirst/)
-  - [Discouraging breast feeding](http://www.theguardian.com/sustainable-business/nestle-baby-milk-scandal-food-industry-standards)
+- [54 workers laid off, then invited to reapply for their old jobs for 65% wage cut.](http://www.theage.com.au/business/workplace-relations/thousands-rally-in-melbourne-for-sacked-beer-workers-20160908-grbi7z.html)
 
 ## How to Play
 
   - A product name will appear.
-  - Click *Nestle* if you think they made it.
+  - Click *CUB* if you think they made it.
   - Click *Other* if you think they didn't.
+
+## Contribute
+
+- [Github](https://github.com/camjc/cub-or-not)
 
 """
 
@@ -101,7 +80,7 @@ model =
     , questions = shuffleListToArray questions
     , correctAnswers = Array.empty
     , wrongAnswers = Array.empty
-    , buttonTrue = ( "Nestle", "#005a97" )
+    , buttonTrue = ( "CUB", "#005a97" )
     , buttonFalse = ( "Other", "#00975a" )
     , instructionsComponent = instructionsComponent
     }
