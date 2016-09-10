@@ -1,4 +1,4 @@
-# CUB or Not
+# C.U.B. or Not
 
 Quiz Game written in Elm
 
@@ -29,8 +29,8 @@ to see it in action.
 
 ## Note
 
-This has no affiliation with CUB or
+This has no affiliation with C.U.B. or
 any of the other companies and products shown.
 
 I haven’t vetted the practices of all other examples yet,
-but just list the main competitor to each CUB product.
+but just list the main competitor to each C.U.B. product.
