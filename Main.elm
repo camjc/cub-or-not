@@ -17,20 +17,38 @@ import Random.Array
 
 questions : List Quiz.Question
 questions =
-    [ ( True, "Carlton Cold" )
+    [ ( True, "Abbotsford Invalid Stout" )
+    , ( False, "4 Pines Stout" )
+    , ( True, "Carlton Cold" )
     , ( False, "Coopers Pale Ale" )
     , ( True, "Carlton Draught" )
     , ( False, "Little Creatures Pale Ale" )
     , ( True, "Carlton Dry" )
     , ( False, "Tooheys Extra Dry" )
     , ( True, "Crown Lager" )
-    , ( False, "Cascade Premium" )
+    , ( False, "Mornington Peninsula Lager" )
+    , ( True, "Cascade Premium Light" )
+    , ( False, "Coopers Clear" )
+    , ( True, "Fat Yak" )
+    , ( False, "James Squire 150 Lashes Pale Ale" )
     , ( True, "Foster's Lager" )
     , ( False, "James Boag's Premium" )
+    , ( True, "Great Northern Super Crisp" )
+    , ( False, "Stone & Wood Green Coast Lager" )
+    , ( True, "Grolsch Premium Lager" )
+    , ( False, "Dos Blockos Pale Lager" )
+    , ( True, "Matilda Bay Beez Neez" )
+    , ( False, "Two Birds Taco" )
     , ( True, "Melbourne Bitter" )
     , ( False, "Brunswick Bitter" )
+    , ( True, "Minimum Chips Golden Lager" )
+    , ( False, "Robot Ninja Sorachi Lager" )
+    , ( True, "Peroni Nastro Azzuro" )
+    , ( False, "James Squire Sundown Lager" )
     , ( True, "Pure Blonde" )
     , ( False, "Hahn SuperDry" )
+    , ( True, "Sheaf Stout" )
+    , ( False, "Mornington Russian Imperial Stout" )
     , ( True, "Victoria Bitter (VB)" )
     , ( False, "Tooheys New" )
     , ( True, "Bulmers" )
@@ -80,7 +98,7 @@ model =
     , questions = shuffleListToArray questions
     , correctAnswers = Array.empty
     , wrongAnswers = Array.empty
-    , buttonTrue = ( "CUB", "#005a97" )
+    , buttonTrue = ( "CUB", "#1d3a73" )
     , buttonFalse = ( "Other", "#00975a" )
     , instructionsComponent = instructionsComponent
     }
