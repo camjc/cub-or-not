@@ -4,7 +4,7 @@ Quiz Game written in Elm
 
 ## Play Online
 
-Not available yet. Will be at http://cub-or-not.s3-website-us-east-1.amazonaws.com/
+http://cub-or-not.s3-website-ap-southeast-2.amazonaws.com/
 
 ## Run Locally
 
